@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Layout from "./Layout";
 import ProjectsLayout from "./ProjectsLayout";
-import { Counter } from "./projects";
+import { Carousal, Counter } from "./projects";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +15,10 @@ const router = createBrowserRouter([
       {
         path: "counter",
         element: <Counter />,
+      },
+      {
+        path: "carousal",
+        element: <Carousal />,
       },
     ],
   },
