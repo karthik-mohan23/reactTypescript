@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Layout from "./Layout";
 import ProjectsLayout from "./ProjectsLayout";
 import { Carousal, Counter } from "./projects";
+import Todos from "./projects/todo/Todos";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,24 @@ const router = createBrowserRouter([
       {
         path: "carousal",
         element: <Carousal />,
+      },
+      {
+        path: "bg-changer",
+        element: <h1>Bg Changer</h1>,
+      },
+
+      {
+        path: "accordion-one",
+        element: <h1>Accordion one</h1>,
+      },
+
+      {
+        path: "accordion-two",
+        element: <h1>Accordion two</h1>,
+      },
+      {
+        path: "todo",
+        element: <Todos />,
       },
     ],
   },
