@@ -3,6 +3,7 @@ import Layout from "./Layout";
 import ProjectsLayout from "./ProjectsLayout";
 import { Carousal, Counter } from "./projects";
 import Todos from "./projects/todo/Todos";
+import Tabs from "./projects/tabs/Tabs";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,14 @@ const router = createBrowserRouter([
       },
       {
         path: "todo",
+        element: <Todos />,
+      },
+      {
+        path: "tabs",
+        element: <Tabs />,
+      },
+      {
+        path: "progress-bar",
         element: <Todos />,
       },
     ],
