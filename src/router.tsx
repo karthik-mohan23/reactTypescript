@@ -4,6 +4,7 @@ import ProjectsLayout from "./ProjectsLayout";
 import { Carousal, Counter } from "./projects";
 import Todos from "./projects/todo/Todos";
 import Tabs from "./projects/tabs/Tabs";
+import StarRating from "./projects/starRating/StarRating";
 
 const router = createBrowserRouter([
   {
@@ -45,8 +46,8 @@ const router = createBrowserRouter([
         element: <Tabs />,
       },
       {
-        path: "progress-bar",
-        element: <Todos />,
+        path: "star-rating",
+        element: <StarRating />,
       },
     ],
   },
